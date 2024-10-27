@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_marginBottom="30dp"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/coin_iv"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/coin_btn_background" />
+
+    <TextView
+        android:id="@+id/tv_coin"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/starcoin"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="999"
+        android:textColor="@color/coin_count_clr"
+        android:textSize="30dp"
+        />
+
+</FrameLayout>

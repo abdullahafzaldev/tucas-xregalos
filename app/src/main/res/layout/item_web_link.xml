@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/visit_web_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/visitandwin_item_background"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/baloo"
+            android:text="VISITA Y GANA"
+            android:textColor="@color/heading_color"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/rounded_corner_drawable"
+            android:backgroundTint="#1A000000"
+            app:layout_constraintBottom_toBottomOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView8">
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/extendedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:animateLayoutChanges="true"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10sp"
+            android:text="@string/web_text"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/visit_web"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Visitar web"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="12dp"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+
+        <!--
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="12dp"
+                    android:background="@drawable/wrong_box__drwable"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView7"
+                    app:layout_constraintStart_toStartOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/visit_web">
+
+                    <EditText
+                        android:id="@+id/key_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00FFFFFF"
+                        android:hint="Escribe la clave aquí..."
+                        android:textColor="#888888"
+                        android:textColorHint="#888888" />
+
+                    <ImageView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_wrong_icon_drawable" />
+                </LinearLayout>
+        -->
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:background="@drawable/rounded_corner_drawable"
+            android:backgroundTint="#1A000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/visit_web">
+
+            <EditText
+                android:id="@+id/key_et"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:paddingHorizontal="12dp"
+                android:layout_weight="1"
+
+                android:background="@null"
+                android:hint="Escribe la clave aquí..."
+                android:textColor="@color/et_text_color"
+                android:textColorHint="@color/et_text_color" />
+
+            <ImageView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_cross" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/coinn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginVertical="11sp"
+        android:drawableStart="@drawable/starcoin"
+        android:drawablePadding="5dp"
+        android:layout_gravity="end"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="+100"
+        android:textColor="@color/heading_color"
+        android:textSize="30dp" />
+</FrameLayout>

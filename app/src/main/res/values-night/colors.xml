@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="item_background_color">#242521</color>
+    <color name="et_text_color">#FFF</color>
+    <color name="collect_coin_clr">#423B23</color>
+    <color name="collect_coin_disable_clr">#CCD1E0</color>
+    <color name="dialog_btn_txt">#030328</color>
+</resources>

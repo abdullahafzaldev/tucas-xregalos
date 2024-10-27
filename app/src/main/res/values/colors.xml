@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0A0A0B</color>
+    <color name="purple_500">#0A0A0B</color>
+    <color name="purple_700">#0A0A0B</color>
+    <color name="teal_200">#7B67D9</color>
+    <color name="teal_700">#7B67D9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="coin_count_clr">#FFF</color>
+    <color name="btn_txt_clr">#181C20</color>
+    <color name="card_descrip_clr">#A3A4A6</color>
+    <color name="background_clr">#0A0A0B</color>
+    <color name="text_green">#68CE56</color>
+    <color name="red">#FF3432</color>
+    <color name="heading_color">#FFF</color>
+    <color name="light_purple">#7B67D9</color>
+    <color name="dark_purple">#1C193F</color>
+    <color name="yellow">#FFE14D</color>
+    <color name="purple">#5442AE</color>
+
+
+    <!--    Premios Colors-->
+
+    <color name="purple_gradient_start">#0A0A0B</color>
+    <color name="purple_gradient_end">#0A0A0B</color>
+    <color name="item_background_color">#242521</color>
+    <color name="item_button_color">#3A3523</color>
+    <color name="et_background_color">#3A3523</color>
+    <color name="et_text_color">#FFF</color>
+    <color name="collect_coin_clr">#423B23</color>
+    <color name="dialog_background_color">#4B4F59</color>
+    <color name="dialog_btn_txt">#030328</color>
+
+
+</resources>

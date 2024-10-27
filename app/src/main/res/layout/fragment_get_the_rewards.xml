@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ui.getrewards.GetTheRewardsFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/header3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/baloo"
+                    android:text="Premios"
+                    android:textColor="@color/heading_color"
+                    android:textSize="35sp"
+                     />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Estas son las tareas del día de hoy. Visita y gana!"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <ScrollView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="25dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp"
+                    >
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_fortniteldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="Fortnite"
+
+                                android:textColor="@color/heading_color"
+
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="5,000 PaVos"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_googleldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:text="GOOGLE PLAY"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="$50 Gift Card"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_steamldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="Steam"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="$50 Gift Card"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_psnldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="PSN"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="$50 Gift Card"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_freefireldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="FREE FIRE"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="5,600 Diamantes"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_robloxldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="ROBLOX"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="4,500 Robux"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_xboxmdpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="XBOX"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="$50 Gift Card"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:id="@+id/eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_gtavldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="gta v"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="8,000,000$"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_gemasmdpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="GEMAS"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="6,500 Gemas"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@drawable/visitandwin_item_background"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="10dp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="40sp"
+                            android:layout_height="40sp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pic_ninetendoldpi" />
+                        <!-- <com.google.android.material.card.MaterialCardView
+                             android:id="@+id/materialCardView"
+                             android:layout_width="50dp"
+                             android:layout_height="50dp"
+                             app:cardCornerRadius="25sp"
+                             android:layout_marginVertical="6dp"
+                             app:layout_constraintBottom_toBottomOf="parent"
+                             app:layout_constraintStart_toStartOf="parent"
+                             app:layout_constraintTop_toTopOf="parent"
+                             app:strokeColor="#2B2059"
+                             app:strokeWidth="4dp">
+
+                             <ImageView
+                                 android:id="@+id/img"
+                                 android:scaleType="centerCrop"
+                                 android:src="@drawable/one"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent" />
+                         </com.google.android.material.card.MaterialCardView>-->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_weight="1" android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:layout_marginEnd="6dp"
+                                android:textAllCaps="true"
+
+                                android:maxLines="1"
+                                android:text="NINTENDO"
+                                android:textColor="@color/heading_color"
+                                android:fontFamily="@font/baloo"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toStartOf="@+id/img_bg"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6sp"
+                                android:text="$50 Gift Card"
+                                android:textColor="#FFFFFF"
+                                android:textSize="13sp"
+                                app:layout_constraintStart_toEndOf="@+id/materialCardView"
+                                app:layout_constraintTop_toBottomOf="@+id/title" />
+                        </LinearLayout>
+
+                        <include
+                            layout="@layout/layout_coin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/emptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/back"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/empty_drawable" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="22sp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="No hay ofertas disponibles en este\nmomento. Vuelve mañana."
+                android:textColor="#9EA7EB" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:text="Volver"
+            android:paddingVertical="10dp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toTopOf="@+id/included"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#EDEDED">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/included"
+                layout="@layout/coins_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/go_to_shop"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

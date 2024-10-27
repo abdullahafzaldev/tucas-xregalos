@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.XRegalos" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/background_clr</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/background_clr</item>
+        <item name="android:navigationBarColor">@color/background_clr</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+
+
+
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+    </style>
+    <!--
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    -->
+
+    <style name="Theme.XRegalos.Splash" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:windowBackground">@color/background_clr</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#8E67F9</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ButtonTextView">
+        <item name="fontFamily">@font/paperwork</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+
+    </style>
+</resources>

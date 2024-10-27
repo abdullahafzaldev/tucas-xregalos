@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/baloo</item>
+        <item>@font/baloo2</item>
+        <item>@font/baloo_bhai_2</item>
+        <item>@font/baloo_paaji</item>
+        <item>@font/baloo_tamma</item>
+        <item>@font/baloo_tammudu</item>
+        <item>@font/bangers</item>
+        <item>@font/dm_sans</item>
+        <item>@font/poppins</item>
+        <item>@font/poppins_bold</item>
+    </array>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">XRegalos</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log in</string>
+    <string name="continue_txt">Continuar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="visit_web">1. Dale click al botón de \"VISITAR WEB\" de más abajo\n2. Dale click al primer link que te sale en el buscador\n3. Cuando encuentres el generador, dale click a \"Generar clave\"\n4. Copia la clave y pégala en el botón de abajo para recibir tus puntos
+</string>
+<!--    <string name="web_text"><font fgcolor='#ffb703'>1.</font> Dale click al botón de \"VISITAR WEB\"\n<font fgcolor='#ffb703'>2.</font> Dale click al primer link que te sale\n<font fgcolor='#ffb703'>3.</font> Dale click a un artículo y abajo del todo dale click a \"Generar clave\"\n<font fgcolor='#ffb703'>4.</font> Copia la clave y pégala en el botón de abajo para recibir tus puntos</string>-->
+    <string name="web_text">1. Dale click al botón de \"VISITAR WEB\"\n2. Dale click al primer link que te sale\n3. Dale click a un artículo y abajo del todo dale click a \"Generar clave\"\n4. Copia la clave y pégala en el botón de abajo para recibir tus puntos</string>
+    <string name="rate_us_string">Si disfrutas utilizando esta app,\n¿te importaría calificarnos?</string>
+    <string name="open_web_text">Presionando en “Continuar” estás \n aceptando las <b>Políticas de Privacidad</b></string>
+    <string name="link">https://sites.google.com/view/xregalospp</string>
+
+</resources>

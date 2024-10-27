@@ -1,0 +1,126 @@
+{
+  "project_info": {
+    "project_number": "322326096744",
+    "project_id": "all-ticus-apps",
+    "storage_bucket": "all-ticus-apps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322326096744:android:2993c0f9358df5522804dd",
+        "android_client_info": {
+          "package_name": "com.codigos.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmncCGYuE6Qg2G3uCt9yA_IYaC-N4IyRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322326096744:android:71147a81095a94682804dd",
+        "android_client_info": {
+          "package_name": "com.tarjetas.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmncCGYuE6Qg2G3uCt9yA_IYaC-N4IyRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322326096744:android:6f5c0d1901e9e0da2804dd",
+        "android_client_info": {
+          "package_name": "com.xregalos.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmncCGYuE6Qg2G3uCt9yA_IYaC-N4IyRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322326096744:android:a5ac3bcb9e75ef312804dd",
+        "android_client_info": {
+          "package_name": "com.xtarjetas.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmncCGYuE6Qg2G3uCt9yA_IYaC-N4IyRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322326096744-age0mekvth7i4n7ofcsguuu6182v1t10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
